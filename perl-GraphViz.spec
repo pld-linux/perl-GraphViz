@@ -18,7 +18,7 @@ Patch0:		perl-%{pdir}-path.patch
 %if %{witht_tests}
 BuildRequires:	graphviz
 %endif
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Graph
 BuildRequires:	perl-IPC-Run >= 0.6
 BuildRequires:	perl-Math-Bezier
