@@ -9,7 +9,8 @@ Summary(pl):	Modu³ Perla GraphViz - interfejs do narzêdzia grafowego GraphViz
 Name:		perl-GraphViz
 Version:	1.8
 Release:	1
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	0c57829334271ee0cd46fe7eb794f647
