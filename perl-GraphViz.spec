@@ -18,7 +18,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Graph
 BuildRequires:	perl-IPC-Run >= 0.6
 BuildRequires:	perl-Math-Bezier
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	graphviz
 Requires:	perl-IPC-Run >= 0.6
 BuildArch:	noarch
