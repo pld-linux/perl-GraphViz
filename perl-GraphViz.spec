@@ -13,6 +13,7 @@ License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	0c57829334271ee0cd46fe7eb794f647
+Patch0:		perl-%{pdir}-path.patch
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	graphviz
 %endif
@@ -42,6 +43,7 @@ u¿yciu programów "dot" i "neato" z projektu GraphViz.
 
 %prep
 %setup -q -n %{pdir}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
