@@ -1,6 +1,7 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
 Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
@@ -19,6 +20,7 @@ BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Graph
 BuildRequires:	perl-IPC-Run >= 0.6
 BuildRequires:	perl-Math-Bezier
+BuildRequires:	perl-Parse-RecDescent
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	graphviz
 Requires:	perl-IPC-Run >= 0.6
