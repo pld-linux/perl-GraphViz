@@ -14,7 +14,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	graphviz
 %endif
-BuildRequires:	perl >= 5.6
+BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Graph
 BuildRequires:	perl-IPC-Run >= 0.6
 BuildRequires:	perl-Math-Bezier
