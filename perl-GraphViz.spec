@@ -7,7 +7,7 @@ Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
 Summary(pl):	Modu³ Perla GraphViz - interfejs do narzêdzia grafowego GraphViz
 Name:		perl-GraphViz
 Version:	1.7
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
@@ -18,7 +18,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Graph
 BuildRequires:	perl-IPC-Run >= 0.6
 BuildRequires:	perl-Math-Bezier
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	graphviz
 Requires:	perl-IPC-Run >= 0.6
 BuildArch:	noarch
@@ -41,7 +41,8 @@ u¿yciu programów "dot" i "neato" z projektu GraphViz.
 %setup -q -n %{pdir}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -61,9 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README TODO
-%{perl_sitelib}/Devel/*.pm
-%{perl_sitelib}/GraphViz.pm
-%{perl_sitelib}/GraphViz
+%{perl_vendorlib}/Devel/*.pm
+%{perl_vendorlib}/GraphViz.pm
+%{perl_vendorlib}/GraphViz
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
