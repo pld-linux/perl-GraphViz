@@ -15,7 +15,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	0c57829334271ee0cd46fe7eb794f647
 Patch0:		perl-%{pdir}-path.patch
-%if %{witht_tests}
+%if %{with tests}
 BuildRequires:	graphviz
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
