@@ -10,7 +10,7 @@ Version:	1.7
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	graphviz
 %endif
