@@ -3,7 +3,7 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	GraphViz
+%define	pdir	GraphViz
 Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
 Summary(pl):	Modu³ Perla GraphViz - interfejs do narzêdzia grafowego GraphViz
 Name:		perl-GraphViz
