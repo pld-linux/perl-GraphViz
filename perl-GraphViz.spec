@@ -7,10 +7,13 @@ Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
 Summary(pl):	Modu³ Perla GraphViz - interfejs do narzêdzia grafowego GraphViz
 Name:		perl-GraphViz
 Version:	1.5
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
+%if %{?_without_tests:0}%{!?_without_tests:1}
+BuildRequires:	graphviz
+%endif
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Graph
 BuildRequires:	perl-IPC-Run >= 0.6
