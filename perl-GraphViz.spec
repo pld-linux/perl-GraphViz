@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
@@ -14,7 +14,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	0c57829334271ee0cd46fe7eb794f647
 Patch0:		perl-%{pdir}-path.patch
-%if %{?_without_tests:0}%{!?_without_tests:1}
+%if %{witht_tests}
 BuildRequires:	graphviz
 %endif
 BuildRequires:	perl-devel >= 5.6
@@ -50,7 +50,7 @@ u¿yciu programów "dot" i "neato" z projektu GraphViz.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
