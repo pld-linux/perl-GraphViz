@@ -1,0 +1,9 @@
+diff -burN GraphViz-1.8.orig/examples/primes_aux.pl GraphViz-1.8/examples/primes_aux.pl
+--- GraphViz-1.8.orig/examples/primes_aux.pl	Sat Jan 18 13:21:19 2003
++++ GraphViz-1.8/examples/primes_aux.pl	Wed Jul 23 09:15:13 2003
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ # badly written program in the hopes it would sound nice
+ # - Greg McCarroll
+ #
