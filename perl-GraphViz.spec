@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
 Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
-Summary(pl):	Modu³ Perla GraphViz - interfejs do narzêdzia grafowego GraphViz
+Summary(pl.UTF-8):   ModuÅ‚ Perla GraphViz - interfejs do narzÄ™dzia grafowego GraphViz
 Name:		perl-GraphViz
 Version:	2.02
 Release:	1
@@ -37,10 +37,10 @@ This modules provides an interface to layout and generate images of
 directed graphs in a variety of formats (PostScript, PNG, etc.) using
 the "dot" and "neato" programs from the GraphViz project.
 
-%description -l pl
-Ten modu³ udostêpnia interfejs do planowania i generowania obrazów
-skierowanych grafów w ró¿nych formatach (PostScript, PNG itd.) przy
-u¿yciu programów "dot" i "neato" z projektu GraphViz.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia interfejs do planowania i generowania obrazÃ³w
+skierowanych grafÃ³w w rÃ³Å¼nych formatach (PostScript, PNG itd.) przy
+uÅ¼yciu programÃ³w "dot" i "neato" z projektu GraphViz.
 
 %prep
 %setup -q -n %{pdir}-%{version}
