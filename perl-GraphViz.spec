@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
 Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
-Summary(pl.UTF-8):   Moduł Perla GraphViz - interfejs do narzędzia grafowego GraphViz
+Summary(pl.UTF-8):	Moduł Perla GraphViz - interfejs do narzędzia grafowego GraphViz
 Name:		perl-GraphViz
 Version:	2.02
 Release:	1
