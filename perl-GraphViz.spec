@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
 Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
 Summary(pl.UTF-8):	Moduł Perla GraphViz - interfejs do narzędzia grafowego GraphViz
