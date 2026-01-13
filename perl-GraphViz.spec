@@ -7,7 +7,7 @@ Summary:	GraphViz Perl module - interface to the GraphViz graphing tool
 Summary(pl.UTF-8):	Moduł Perla GraphViz - interfejs do narzędzia grafowego GraphViz
 Name:		perl-GraphViz
 Version:	2.26
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
